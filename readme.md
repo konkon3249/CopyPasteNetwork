@@ -1,14 +1,14 @@
 
-## SCDVによるベクトル表現を用いた学生レポート間の参照ネットワーク可視化  
+# SCDVによるベクトル表現を用いた学生レポート間の参照ネットワーク可視化  
 
 作者：konkon
 
-# 概要
+## 概要
 
 文章同士の相互関係を、それぞれの文の表現ベクトルのcos類似度で比較して参照関係をネットワーク化するプログラム。  
 要するに文章間の相互参照関係(＝コピペ関係)を可視化するやつ。
 
-# 動作環境
+## 動作環境
 
 動作環境は以下の通り。  
 
@@ -28,7 +28,7 @@ environments.txtに必要なパッケージは記載してあります。
   
 　$ pip install -r environments.txt  
 
-# 使い方
+## 使い方
 
 1. document/に、レポート文書([学籍番号].docx)を入れてください。.doc(古いWordの保存形式)には対応してません。.docxに変換してから入れてください。  
 
@@ -53,8 +53,12 @@ environments.txtに必要なパッケージは記載してあります。
 　　あとは煮るなり焼くなり好きにどうぞ。  
 　　JSONファイルはフリーのグラフ描画ソフト[Cytoscape](https://cytoscape.org/)にインポート可能な形式で保存されます。  
 
+7. JSONファイルはグラフ描画ソフト[Cytoscape](https://cytoscape.org/)にインポート可能な形式で保存されます。このソフトを用いて作成したネットワーク画像のサンプルはこちらです。
 
-# ディレクトリ構成
+<img src="sample.png">
+
+
+## ディレクトリ構成
 
 CopyPasteNetwork/  
 │  
@@ -93,7 +97,7 @@ CopyPasteNetwork/
 作者: konkon
 
 Twitter: https://twitter.com/konkon28983820  
-E-mail: ishikawa@unno.material.nagoya-u.ac.jp  
+E-mail: velvetteen.rabbit@gmail.com  
 GitHub: https://github.com/konkon3249  
 Qiita: https://qiita.com/kon2  
 
