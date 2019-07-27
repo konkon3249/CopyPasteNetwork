@@ -82,7 +82,7 @@ threshold == 0.6の場合のネットワーク図
 
 ## ディレクトリ構成
 
-CopyPasteNetwork/ (ここ)
+CopyPasteNetwork/ (ここ)  
 │  
 ├ document/ (学習, 解析対象の.docxドキュメントを保存)  
 │　│  
