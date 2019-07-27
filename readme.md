@@ -65,7 +65,15 @@ Mecabのインストール方法は以下を参照してください。
 
 ## ネットワーク図サンプル
 
-<img src="sample.png">
+<img src="sample(sim=0.80).png">
+
+threshold == 0.8の場合のネットワーク図  
+
+<img src="sample(sim=0.60).png">
+
+threshold == 0.6の場合のネットワーク図  
+エッジのアルファ値が文の類似度、ノードのサイズが相互参照の数を表す。  
+(ネットワーク図はCytoscapeにて作成)  
 
 ## ディレクトリ構成
 
