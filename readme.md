@@ -1,9 +1,5 @@
 
-------------------------------------------------------------------------------  
-  
-　　SCDVによるベクトル表現を用いた学生レポート間の参照ネットワーク可視化  
-  
-------------------------------------------------------------------------------  
+## SCDVによるベクトル表現を用いた学生レポート間の参照ネットワーク可視化  
 
 作者：konkon
 
@@ -34,14 +30,11 @@ environments.txtに必要なパッケージは記載してあります。
 
 # 使い方
 
-1. document/に、レポート文書([学籍番号].docx)を入れてください。  
-　　.doc(古いWordの保存形式)には対応してません。.docxに変換してから入れてください。  
+1. document/に、レポート文書([学籍番号].docx)を入れてください。.doc(古いWordの保存形式)には対応してません。.docxに変換してから入れてください。  
 
-2. 事前学習モデルを用意してください。  
-　　(自分はここ[http://aial.shiroyagi.co.jp/2017/02/japanese-word2vec-model-builder/]のをダウンロードしました)  
-　　解凍後出てきたファイルはすべて pretrained_model/の中に入れてください。  
+2. 事前学習モデルを用意してください。自分は[白ヤギコーポレーション](http://aial.shiroyagi.co.jp/2017/02/japanese-word2vec-model-builder/)さんからダウンロードしました。解凍後出てきたファイルはすべて pretrained_model/の中に入れてください。  
 
-3. コマンドプロンプトを開き、上記のパッケージがインストールされたPython環境を有効にしてください。  
+3. コマンドプロンプトを開き、上記のパッケージがインストールされたPython環境を有効にしてください。
 
 4. このディレクトリ(CopyPasteNetwork/) に移動し、以下のコマンドでプログラムを実行します。  
   
@@ -49,9 +42,7 @@ environments.txtに必要なパッケージは記載してあります。
   
 　　thresholdには関連性を判別するcos類似度の閾値(0~1)を入力してください。0.8程度を推奨します。  
 
-5. はじめてプログラムを実行する場合は事前学習モデルに対して追加学習を行います。  
-　　追加学習後のモデルは model/ に保存されます。  
-　　二度目以降にプログラムを実行し、modelに学習モデルが存在する場合は追加学習を行いません。  
+5. はじめてプログラムを実行する場合は事前学習モデルに対して追加学習を行います。追加学習後のモデルは model/ に保存されます。二度目以降にプログラムを実行し、modelに学習モデルが存在する場合は追加学習を行いません。  
 
 6. 検出されたネットワーク構造は  
   
@@ -60,7 +51,7 @@ environments.txtに必要なパッケージは記載してあります。
   
 　　として保存されます。  
 　　あとは煮るなり焼くなり好きにどうぞ。  
-　　JSONファイルはフリーのグラフ描画ソフトCytoscape(https://cytoscape.org/)にインポート可能な形式で保存されます。  
+　　JSONファイルはフリーのグラフ描画ソフト[Cytoscape](https://cytoscape.org/)にインポート可能な形式で保存されます。  
 
 
 # ディレクトリ構成
@@ -98,15 +89,12 @@ CopyPasteNetwork/
 └ readme.txt  
 　 このテキストです。  
   
-＿人人人人人人人人人人人人人人人人人人人人人人人人人人人人人人＿  
-＞　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　＜  
-＞　　　　　　　作者: 石川晃平 (a.k.a. konkon)　　　　　　　　＜  
-＞　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　＜  
-＞　　　Twitter: https://twitter.com/konkon28983820 　　　　　＜  
-＞　　　E-mail: ishikawa@unno.material.nagoya-u.ac.jp　　　　 ＜  
-＞　　　GitHub: https://github.com/konkon3249　　　　　　　　 ＜  
-＞　　　Qiita: https://qiita.com/kon2　　　　　　　　　　　　 ＜  
-＞　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　＜  
-￣Y^Y^Y^Y^Y^Y^Y^Y^Y^Y^Y^Y^Y^Y^Y^Y^Y^Y^Y^Y^Y^Y^Y^Y^Y^Y^Y^Y^Y^Y^￣  
-  
-Copyright (c) 2019 Kohei Ishikawa  
+
+作者: konkon
+
+Twitter: https://twitter.com/konkon28983820  
+E-mail: ishikawa@unno.material.nagoya-u.ac.jp  
+GitHub: https://github.com/konkon3249  
+Qiita: https://qiita.com/kon2  
+
+Copyright (c) 2019 konkon. 
