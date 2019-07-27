@@ -19,14 +19,23 @@ Memory: 16 GB
 
 Python及び必要パッケージのバージョンは以下の通りです。  
   
-Python == 3.6.7  
-numpy == 1.16.4  
-matplotlib == 3.1.1  
+Python == 3.6.5  
+numpy==1.14.5  
+pandas==0.23.1  
+matplotlib==2.2.2  
+mecab-python-windows==0.996.1  
+networkx==2.3  
+python-docx==0.8.10  
+gensim==3.4.0  
+scikit-learn==0.19.1  
   
-environments.txtに必要なパッケージは記載してあります。  
+environments.txtに必要なパッケージ(MeCab以外)は記載してあります。  
 以下のようにまとめてインストールできます。  
   
 　$ pip install -r environments.txt  
+
+Mecabのインストール方法は以下を参照してください。  
+[PythonとMeCabで形態素解析(on Windows) --Qiita](https://qiita.com/menon/items/f041b7c46543f38f78f7)  
 
 ## 使い方
 
@@ -51,16 +60,16 @@ environments.txtに必要なパッケージは記載してあります。
   
 　　として保存されます。  
 　　あとは煮るなり焼くなり好きにどうぞ。  
-　　JSONファイルはフリーのグラフ描画ソフト[Cytoscape](https://cytoscape.org/)にインポート可能な形式で保存されます。  
 
-7. JSONファイルはグラフ描画ソフト[Cytoscape](https://cytoscape.org/)にインポート可能な形式で保存されます。このソフトを用いて作成したネットワーク画像のサンプルはこちらです。
+7. JSONファイルはグラフ描画ソフト[Cytoscape](https://cytoscape.org/)で開けます。サンプルは以下。
+
+## ネットワーク図サンプル
 
 <img src="sample.png">
 
-
 ## ディレクトリ構成
 
-CopyPasteNetwork/  
+CopyPasteNetwork/ (ここ)
 │  
 ├ document/ (学習, 解析対象の.docxドキュメントを保存)  
 │　│  
@@ -68,7 +77,7 @@ CopyPasteNetwork/
 │　├ ********.docx  
 │　　　：  
 │  
-├ pretrained_model/ (事前学習モデルを保存)  
+├ pretrained_model/ (事前学習モデルはここに入れる)  
 │　│  
 │　├ word2vec.gensim.model  
 │　├ word2vec.gensim.model.syn1neg.npy  
@@ -77,7 +86,7 @@ CopyPasteNetwork/
 │　↑[http://aial.shiroyagi.co.jp/2017/02/japanese-word2vec-model-builder/]  
 │　　からダウンロード  
 │  
-├ model/ (再学習したWord2Vecモデルを保存)  
+├ model/ (再学習したWord2Vecモデルはここに入る)  
 │　│  
 │　├ *****.model  
 │　├ *****.syn1neg.npy  
